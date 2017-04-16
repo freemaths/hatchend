@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::get('ajax', 'ReactController@ajax');
 Route::post('ajax', 'ReactController@ajax');
