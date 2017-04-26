@@ -14,5 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/upload', function () {
+		return view('upload');
+});
+Route::post('upload', 'UploadController@upload');
 Route::get('ajax', 'ReactController@ajax');
 Route::post('ajax', 'ReactController@ajax');

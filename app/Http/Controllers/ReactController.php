@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Volunteer;
+use App\Competitor;
 use App\Role;
 use Log;
 use DB;
@@ -20,6 +21,7 @@ class ReactController extends Controller
 	{
 		if($request->ajax()){
 			if (isset($request->volunteers)) return ($this->volunteers($request));
+			else if (isset($request->competitors)) return ($this->competitors($request));
 			else if (isset($request->save)) $this->save($request); // fall through to return updates
 			else if (isset($request->roles)) $this->roles($request);
 			else if (isset($request->login)) return ($this->login($request));
@@ -29,7 +31,7 @@ class ReactController extends Controller
 			else Log::debug('ajax GET');
 			$latest=DB::table('roles')->max('id');
 			Log::debug("roles",['id'=>$latest]);
-			return response()->json(['csrf'=>csrf_token(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
+			return response()->json(['csrf'=>csrf_token(),'competitors'=>$this->get_comps(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
 		}
 	}
 	
@@ -52,6 +54,31 @@ class ReactController extends Controller
 		}
 		return $ret;
 	}
+	
+	private function get_comps($priv=true)
+	{
+		$ret=[];
+		$cs=Competitor::all();
+		foreach($cs as $c) {
+			$comp=json_decode($c->json,true);
+			$cr=[];
+			$cr['id']=$c->id;
+			$cr['forename']=$comp['Forename'];
+			$cr['surname']=$comp['Surname'];
+			$cr['gender']=$comp['Gender'];
+			$cr['ageGroup']=$comp['AgeGroup'];
+			foreach ($comp as $key =>$value) {
+				if (ends_with($key,'swim_time'))
+				{
+					$cr['swim']=$value;
+					$cr['estimate']=$key;
+				}
+			}
+			$ret[]=$cr;
+		}
+		return $ret;
+	}
+	
 	
 	private function volunteers($request)
 	{
