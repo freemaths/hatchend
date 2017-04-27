@@ -23,6 +23,7 @@ class ReactController extends Controller
 			if (isset($request->volunteers)) return ($this->volunteers($request));
 			else if (isset($request->competitors)) return ($this->competitors($request));
 			else if (isset($request->save)) $this->save($request); // fall through to return updates
+			else if (isset($request->saveC)) return ($this->saveC($request)); // fall through to return updates
 			else if (isset($request->roles)) $this->roles($request);
 			else if (isset($request->login)) return ($this->login($request));
 			else if (isset($request->vid)) return ($this->vid($request));
@@ -63,11 +64,12 @@ class ReactController extends Controller
 			$comp=json_decode($c->json,true);
 			$cr=[];
 			$cr['id']=$c->id;
-			$cr['forename']=$comp['Forename'];
-			$cr['surname']=$comp['Surname'];
+			if (isset($comp['forename'])) $cr['forename']=$comp['forename']; else $cr['forename']=$comp['Forename'];
+			if (isset($comp['surname'])) $cr['surname']=$comp['surname']; else $cr['surname']=$comp['Surname'];
 			$cr['gender']=$comp['Gender'];
 			$cr['ageGroup']=$comp['AgeGroup'];
-			foreach ($comp as $key =>$value) {
+			if (isset($comp['swim'])) $cr['swim']=$comp['swim'];
+			else foreach ($comp as $key =>$value) {
 				if (ends_with($key,'swim_time'))
 				{
 					$cr['swim']=$value;
@@ -113,6 +115,21 @@ class ReactController extends Controller
 			$vol=json_decode($v->json);
 			$vol->id=$v->id;
 			Mail::to("ed@darnell.org.uk")->queue(new VolunteerUpdate($vol,$old));
+		}
+	}
+	
+	private function saveC($request)
+	{
+		Log::debug('ajax saveC',['saveC'=>$request->saveC]);
+		if ($c=Competitor::where('id',$request->saveC['id'])->first()) {
+			$old=json_decode($c->json,true);
+			foreach ($request->saveC as $key=>$val)
+			{
+				if (!isset($old[$key]) || $old[$key] !== $val) $old[$key]=$val;
+			}
+			$c->json=json_encode($old);
+			$c->save();
+			return response()->json(['competitors'=>$this->get_comps()]);
 		}
 	}
 	
