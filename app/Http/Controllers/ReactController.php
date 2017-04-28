@@ -23,7 +23,8 @@ class ReactController extends Controller
 			if (isset($request->volunteers)) return ($this->volunteers($request));
 			else if (isset($request->competitors)) return ($this->competitors($request));
 			else if (isset($request->save)) $this->save($request); // fall through to return updates
-			else if (isset($request->saveC)) return ($this->saveC($request)); // fall through to return updates
+			else if (isset($request->saveC)) return ($this->saveC($request)); 
+			else if (isset($request->saveCs)) return ($this->saveCs($request)); 
 			else if (isset($request->roles)) $this->roles($request);
 			else if (isset($request->login)) return ($this->login($request));
 			else if (isset($request->vid)) return ($this->vid($request));
@@ -34,7 +35,8 @@ class ReactController extends Controller
 			else Log::debug('ajax GET');
 			$latest=DB::table('roles')->max('id');
 			Log::debug("roles",['id'=>$latest]);
-			return response()->json(['csrf'=>csrf_token(),'competitors'=>$this->get_comps(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
+			$comps=$this->get_comps();
+			return response()->json(['csrf'=>csrf_token(),'competitors'=>$comps,'scheduled'=>$this->scheduled($comps),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
 		}
 	}
 	
@@ -44,7 +46,12 @@ class ReactController extends Controller
 		{
 			$ret=[];
 			$vs=Volunteer::all();
-			foreach($vs as $v) $ret[]=json_decode($v->json);
+			foreach($vs as $v) {
+				$vol=json_decode($v->json);
+				$vol->id=$v->id;
+				$vol->updated_at=$v->updated_at->format('d M Y H:i:s');
+				$ret[]=$vol;	
+			}
 			return response()->json(['volunteers'=>$ret]);
 		}
 	}
@@ -80,16 +87,28 @@ class ReactController extends Controller
 		return $ret;
 	}
 	
+	private function scheduled($cs)
+	{
+		$scheduled=true;
+		foreach($cs as $c) {
+			$scheduled=$scheduled && isset($c['n']);
+		}
+		return $scheduled;
+	}
+	
 	private function get_comps($priv=true)
 	{
 		$ret=[];
 		$cs=Competitor::all();
 		foreach($cs as $c) {
-			$comp=json_decode($c->json,true);
 			$cr=[];
 			$cr['id']=$c->id;
+			$comp=json_decode($c->json,true);
 			if (isset($comp['forename'])) $cr['forename']=$comp['forename']; else $cr['forename']=$comp['Forename'];
 			if (isset($comp['surname'])) $cr['surname']=$comp['surname']; else $cr['surname']=$comp['Surname'];
+			if (isset($comp['n'])) $cr['n']=$comp['n'];
+			if (isset($comp['briefing'])) $cr['briefing']=$comp['briefing'];
+			if (isset($comp['start'])) $cr['start']=$comp['start'];
 			$cr['gender']=$comp['Gender'];
 			$cr['ageGroup']=$comp['AgeGroup'];
 			if (isset($comp['swim'])) $cr['swim']=$comp['swim'];
@@ -154,6 +173,31 @@ class ReactController extends Controller
 			$c->json=json_encode($old);
 			$c->save();
 			return response()->json(['competitors'=>$this->get_comps()]);
+		}
+	}
+	
+	private function saveCs($request)
+	{
+		Log::debug('ajax saveCs',['saveCs'=>$request->saveCs]);
+		if ($cs=Competitor::all()) {
+			$new=[];
+			foreach ($request->saveCs as $c) $new[$c['id']]=$c;
+			foreach($cs as $c)
+			{
+				$old=json_decode($c->json,true);
+				foreach ($new[$c->id] as $key=>$val)
+				{
+					if (!isset($old[$key]) || $old[$key] !== $val) $old[$key]=$val;
+				}
+				if (isset($old['surname'])){ $old['Surname']=$old['surname']; unset($old['surname']);}
+				if (isset($old['forename'])){ $old['Forename']=$old['forename']; unset($old['forename']);}
+				if (isset($old['gender'])){ $old['Gender']=$old['gender']; unset($old['gender']);}
+				if (isset($old['ageGroup'])){ $old['AgeGroup']=$old['ageGroup']; unset($old['ageGroup']);}
+				$c->json=json_encode($old);
+				$c->save();
+			}
+			$comps=$this->get_comps();
+			return response()->json(['competitors'=>$comps,'scheduled'=>$this->scheduled($comps)]);
 		}
 	}
 	
