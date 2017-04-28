@@ -28,11 +28,35 @@ class ReactController extends Controller
 			else if (isset($request->login)) return ($this->login($request));
 			else if (isset($request->vid)) return ($this->vid($request));
 			else if (isset($request->new)) $this->newVolunteer($request);
+			else if (isset($request->volAll)) return ($this->volAll($request));
+			else if (isset($request->compAll)) return ($this->compAll($request));
 			//else if (isset($request->sendEmails)) return ($this->sendEmails($request));
 			else Log::debug('ajax GET');
 			$latest=DB::table('roles')->max('id');
 			Log::debug("roles",['id'=>$latest]);
 			return response()->json(['csrf'=>csrf_token(),'competitors'=>$this->get_comps(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
+		}
+	}
+	
+	private function volAll($request)
+	{
+		if ($request->volAll['email'] === 'ed@darnell.org.uk')
+		{
+			$ret=[];
+			$vs=Volunteer::all();
+			foreach($vs as $v) $ret[]=json_decode($v->json);
+			return response()->json(['volunteers'=>$ret]);
+		}
+	}
+	
+	private function compAll($request)
+	{
+		if ($request->compAll['email'] === 'ed@darnell.org.uk')
+		{
+			$ret=[];
+			$cs=Competitor::all();
+			foreach($cs as $c) $ret[]=json_decode($c->json);
+			return response()->json(['competitors'=>$ret]);
 		}
 	}
 	
