@@ -28,7 +28,7 @@ class ReactController extends Controller
 			else if (isset($request->login)) return ($this->login($request));
 			else if (isset($request->vid)) return ($this->vid($request));
 			else if (isset($request->new)) $this->newVolunteer($request);
-			else if (isset($request->sendEmails)) return ($this->sendEmails($request));
+			//else if (isset($request->sendEmails)) return ($this->sendEmails($request));
 			else Log::debug('ajax GET');
 			$latest=DB::table('roles')->max('id');
 			Log::debug("roles",['id'=>$latest]);
@@ -159,7 +159,7 @@ class ReactController extends Controller
 			if (isset($vol->email)) {
 				Log::debug('sendEmail',['email'=>$vol->email,'delay'=>$delay,'when'=>$when]);
 				//Mail::to("ed@darnell.org.uk")->bcc("ed@darnell.org.uk")->later($when,new VolunteerWelcome($vol));
-				Mail::to($vol->email)->bcc("ed@darnell.org.uk")->later($when,new VolunteerWelcome($vol));
+				//Mail::to($vol->email)->bcc("ed@darnell.org.uk")->later($when,new VolunteerWelcome($vol));
 			}
 			else Log::debug('sendEmail unset email',['id'=>$vol->id,'delay'=>$delay,'when'=>$when]);
 		}
