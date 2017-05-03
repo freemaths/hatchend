@@ -29,8 +29,8 @@ class ReactController extends Controller
 			else if (isset($request->login)) return ($this->login($request));
 			else if (isset($request->vid)) return ($this->vid($request));
 			else if (isset($request->new)) $this->newVolunteer($request);
-			//else if (isset($request->volAll)) return ($this->volAll($request));
-			//else if (isset($request->compAll)) return ($this->compAll($request));
+			//else if (isset($request->volAll)) return ($this->volAll($request)); // for CSV files
+			//else if (isset($request->compAll)) return ($this->compAll($request)); // for CSV files
 			//else if (isset($request->sendEmails)) return ($this->sendEmails($request));
 			else Log::debug('ajax GET');
 			$latest=DB::table('roles')->max('id');
