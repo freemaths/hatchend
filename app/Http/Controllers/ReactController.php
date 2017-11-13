@@ -14,6 +14,7 @@ use App\Mail\VolunteerAdd;
 use App\Mail\VolunteerUpdate;
 use Illuminate\Support\Facades\Mail;
 use Carbon\Carbon;
+use Storage;
 
 class ReactController extends Controller
 {
@@ -21,6 +22,7 @@ class ReactController extends Controller
 	{
 		if($request->ajax()){
 			if (isset($request->volunteers)) return ($this->volunteers($request));
+			else if (isset($request->results)) return ($this->results($request));
 			else if (isset($request->competitors)) return ($this->competitors($request));
 			else if (isset($request->save)) $this->save($request); // fall through to return updates
 			else if (isset($request->saveC)) return ($this->saveC($request)); 
@@ -29,14 +31,17 @@ class ReactController extends Controller
 			else if (isset($request->login)) return ($this->login($request));
 			else if (isset($request->vid)) return ($this->vid($request));
 			else if (isset($request->new)) $this->newVolunteer($request);
-			//else if (isset($request->volAll)) return ($this->volAll($request)); // for CSV files
-			//else if (isset($request->compAll)) return ($this->compAll($request)); // for CSV files
+			else if (isset($request->volAll)) return ($this->volAll($request)); // for CSV files
+			else if (isset($request->compAll)) return ($this->compAll($request)); // for CSV files
 			//else if (isset($request->sendEmails)) return ($this->sendEmails($request));
 			else Log::debug('ajax GET');
+			/* breaking old code - will need to fix
 			$latest=DB::table('roles')->max('id');
 			Log::debug("roles",['id'=>$latest]);
 			$comps=$this->get_comps();
 			return response()->json(['csrf'=>csrf_token(),'competitors'=>$comps,'scheduled'=>$this->scheduled($comps),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
+			*/
+			return response()->json(['csrf'=>csrf_token()]);
 		}
 	}
 	
@@ -54,6 +59,16 @@ class ReactController extends Controller
 			}
 			return response()->json(['volunteers'=>$ret]);
 		}
+	}
+	
+	private function results($request)
+	{
+		$results=[];
+		foreach (Storage::files('results') as $file){
+			$results[$file]=Storage::get($file);
+		}
+		Log::debug("results",['results'=>array_keys($results)]);
+		return response()->json(['results'=>$results]);
 	}
 	
 	private function compAll($request)
