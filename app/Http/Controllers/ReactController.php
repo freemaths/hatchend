@@ -66,6 +66,7 @@ class ReactController extends Controller
 		$results=[];
 		foreach (Storage::files('results') as $file){
 			$results[$file]=Storage::get($file);
+			if (!mb_detect_encoding($results[$file], 'UTF-8', true)) $results[$file]=utf8_encode($results[$file]);
 		}
 		Log::debug("results",['results'=>array_keys($results)]);
 		return response()->json(['results'=>$results]);
