@@ -1,0 +1,20 @@
+Position,Bib #,Athlete Name,Gender,Category,Club,Swim,T1,Cycle,T2,Run,Gun Time, Time Difference
+1,113,"WILLIAM ROAKE",M,,"B2P tri Club",00:01:33,00:02:10,00:03:35,00:00:35,00:02:35,00:10:29,
+2,110,"LUCA HOLLYWOOD",M,,"Thames Turbo Triathlon Club",00:01:59,00:01:05,00:04:02,00:00:36,00:02:53,00:10:37,+00:00:08
+3,105,"Charlotte Lewis",F,,"Thames Turbo Triathlon Club",00:01:47,00:01:36,00:04:50,00:00:38,00:03:03,00:11:56,+00:01:27
+4,103,"Caitlin Loveless",F,,NULL,00:02:18,00:01:49,00:03:52,00:01:08,00:02:54,00:12:03,+00:01:34
+5,116,"LILLY DEMPSEY",F,,"HILLINGDON SWIMMING CLUB",00:01:35,00:01:58,00:04:42,00:01:14,00:02:46,00:12:17,+00:01:48
+6,108,"Henry Cook",M,,NULL,00:02:15,00:01:58,00:04:33,00:00:45,00:02:49,00:12:21,+00:01:52
+7,107,"Tom Leach",M,,Jetstream,00:01:52,00:01:43,00:04:51,00:00:46,00:03:14,00:12:28,+00:01:59
+8,106,"Poppy Bridgen",F,,"Hillingdon Triathletes",00:01:58,00:02:25,00:05:01,00:00:44,00:03:12,00:13:23,+00:02:54
+9,114,"Niamh Shute",F,,NULL,00:01:56,00:02:24,00:05:06,00:00:53,00:03:14,00:13:35,+00:03:06
+10,100,"James Garner",M,,"AMERSHAM TRISTARS",00:03:28,00:02:38,00:04:32,00:00:42,00:02:48,00:14:11,+00:03:42
+11,111,"Scarlett Gammell",F,,NULL,00:02:05,00:02:14,00:06:33,00:00:44,00:02:56,00:14:35,+00:04:06
+12,102,"John Williamskerslake",M,,NULL,00:02:55,00:03:18,00:04:44,00:00:43,00:03:01,00:14:42,+00:04:13
+13,101,"Bryony Wiles",F,,NULL,00:02:45,00:02:22,00:05:12,00:00:50,00:03:47,00:14:58,+00:04:29
+14,104,"Abigail Mchale",F,,"Jetstream Tri Club",00:02:32,00:02:30,00:06:02,00:00:48,00:03:08,00:15:01,+00:04:32
+15,115,"Aura Gleeson",F,,NULL,00:01:34,00:02:46,00:06:08,00:00:55,00:03:45,00:15:09,+00:04:40
+16,112,"Jeya James",F,,Jetstream,00:02:48,00:03:00,00:05:09,00:00:44,00:03:41,00:15:23,+00:04:54
+
+Copyright StuWeb Race Timing - http://www.stuweb.co.uk
+Not for re-publication online without prior written permission.
