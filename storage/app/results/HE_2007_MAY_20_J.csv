@@ -1,0 +1,169 @@
+Pos,Bib,Name,Cat,Pos Cat,Gender,Club,Swim,Pos,Bike,Pos,Run,Pos,Total
+1,40,"Dawson, Henry",Tristar 1,1,male,,0:02:57,7,0:08:44,1,0:06:13,3,0:17:54
+2,30,"Tapley, James",Tristar 1,2,male,Cambridge TC,0:02:42,2,0:09:08,3,0:06:06,2,0:17:56
+3,24,"Gough, Adam",Tristar 1,3,male,Cambridge TC,0:02:52,6,0:08:52,2,0:06:17,4,0:18:01
+4,39,"Hartweg, Julia",Tristar 1,1,female,Thames Turbo,0:02:26,2,0:09:31,1,0:06:33,5,0:18:30
+5,31,"Pitts, Jonathan",Tristar 1,4,male,Tri-Force,0:02:42,2,0:09:52,4,0:06:05,1,0:18:39
+6,27,"Robertson, Jamie",Tristar 1,5,male,Thames Turbo,0:02:42,2,0:09:57,5,0:06:39,5,0:19:18
+7,35,"Hall, Alice",Tristar 1,2,female,Amersham Tri,0:02:43,6,0:10:16,2,0:06:33,5,0:19:32
+8,41,"Berchie, Leon",Tristar 1,6,male,,0:02:05,1,0:10:43,6,0:06:49,7,0:19:37
+9,38,"Browne, Roisin",Tristar 1,3,female,East Essex T,0:02:41,4,0:10:50,3,0:06:20,3,0:19:51
+10,29,"Muggleton, Emily",Tristar 1,4,female,East Essex T,0:02:20,1,0:11:12,4,0:06:35,7,0:20:07
+11,33,"Jones, Claudia",Tristar 1,5,female,,0:02:37,3,0:11:14,5,0:06:20,3,0:20:11
+12,37,"Payne, Emily",Tristar 1,6,female,East Essex T,0:02:49,7,0:11:35,6,0:06:13,2,0:20:37
+13,36,"Swain, Michael",Tristar 1,7,male,,0:02:42,2,0:11:54,7,0:06:44,6,0:21:20
+14,22,"Guildford, Joanna",Tristar 1,7,female,Thames Turbo,0:02:49,7,0:11:40,7,0:07:06,9,0:21:35
+15,28,"Smith, Brogan",Tristar 1,8,female,East Essex T,0:02:49,7,0:13:17,11,0:07:02,8,0:23:08
+16,2,"Goodenough, Zachary",Tristar 1,8,male,,0:03:52,11,0:12:21,8,0:06:58,9,0:23:11
+17,34,"Benjamin, Alana",Tristar 1,9,female,,0:03:24,11,0:12:13,8,0:07:44,11,0:23:21
+18,25,"Smith, Brooke",Tristar 1,10,female,East Essex T,0:00:00,0,0:00:00,0,0:07:59,12,0:23:43
+19,20,"Whittaker, Max",Tristar 1,9,male,,0:04:19,14,0:13:20,10,0:06:58,9,0:24:37
+20,16,"Robertson, Isabella",Tristar 1,11,female,,0:03:12,10,0:12:52,9,0:08:54,16,0:24:58
+21,7,"Tighe, Marcus",Tristar 1,10,male,,0:03:34,9,0:13:11,9,0:08:14,14,0:24:59
+22,18,"Poole, Toby",Tristar 1,10,male,,0:03:48,10,0:14:15,15,0:06:56,8,0:24:59
+23,32,"Miles, Grace",Tristar 1,12,female,,0:02:42,5,0:13:11,10,0:09:12,18,0:25:05
+24,5,"James, Mattis",Tristar 1,12,male,,0:04:34,15,0:13:58,12,0:07:08,12,0:25:40
+25,26,"Summers, Gabriel",Tristar 1,13,male,Tri-Sport-UK,0:03:57,16,0:13:32,12,0:08:14,14,0:25:43
+26,10,"DiMurro, Laura",Tristar 1,14,female,,0:03:48,15,0:14:35,17,0:07:29,10,0:25:52
+27,12,"Cryer-Jenkins, Evan",Tristar 1,13,male,,0:05:04,17,0:13:59,13,0:07:03,11,0:26:06
+28,17,"Argent, Jessica",Tristar 1,15,female,,0:03:33,12,0:14:26,16,0:08:20,15,0:26:19
+29,11,"Coutts, Saffyre",Tristar 1,16,female,,0:03:42,13,0:17:18,22,0:05:32,1,0:26:32
+30,9,"Popper, Haydn",Tristar 1,14,male,,0:04:05,12,0:15:18,16,0:07:17,13,0:26:40
+31,14,"Sennik, Balram",Tristar 1,15,male,,0:03:32,8,0:13:59,13,0:09:23,16,0:26:54
+32,21,"Burgess, Stephen",Tristar 1,16,male,,0:04:09,13,0:13:46,11,0:09:18,15,0:27:13
+33,13,"Churchman, Francesca",Tristar 1,17,female,,0:04:21,18,0:14:47,19,0:08:10,13,0:27:18
+34,15,"Stone, Sophie",Tristar 1,18,female,,0:04:26,19,0:14:21,15,0:08:55,17,0:27:42
+35,1,"Ward, Georgia",Tristar 1,19,female,,0:04:59,20,0:14:14,13,0:09:18,19,0:28:31
+36,23,"Darnell, Emma",Tristar 1,20,female,,0:03:59,17,0:14:46,18,0:10:26,21,0:29:11
+37,4,"James, Nina",Tristar 1,21,female,,0:05:09,21,0:14:18,14,0:10:01,20,0:29:28
+38,8,"Smithson, Claire",Tristar 1,22,female,Jetstream Tr,0:03:43,14,0:17:16,21,0:10:40,23,0:31:39
+39,3,"Jackson, Nikhita",Tristar 1,23,female,,0:05:29,22,0:16:38,20,0:10:32,22,0:32:39
+40,19,"Reid, Marcus",Tristar 1,17,male,,0:04:36,16,0:24:28,17,0:10:07,17,0:39:11
+1,273,"Barraclough, Daniel",Tristar 2,1,male,Amersham Tri,0:02:22,1,0:10:34,1,0:07:33,1,0:20:29
+2,269,"Draper, Sky",Tristar 2,1,female,Jetstream Tr,0:02:29,1,0:11:11,1,0:07:47,1,0:21:27
+3,272,"Boericke, Jack",Tristar 2,2,male,,0:02:45,4,0:11:49,4,0:08:01,2,0:22:35
+4,265,"Penney, Luke",Tristar 2,3,male,Thames Turbo,0:02:47,5,0:11:53,5,0:08:12,3,0:22:52
+5,259,"Hawkins (Northwood),",Tristar 2,4,male,Jetstream Tr,0:03:00,7,0:11:40,3,0:08:19,5,0:22:59
+6,260,"Partington, Katy",Tristar 2,2,female,,0:02:58,8,0:12:15,5,0:08:01,2,0:23:14
+7,263,"Roberts, Jonathan",Tristar 2,5,male,Bishop Stort,0:03:41,18,0:11:39,2,0:08:13,4,0:23:33
+8,266,"Antoine-Chagar,",Tristar 2,3,female,Swim For Tri,0:02:31,2,0:12:44,8,0:08:30,3,0:23:45
+9,225,"Penny, Ollie",Tristar 2,6,male,Thames Turbo,0:02:35,2,0:12:32,6,0:08:53,6,0:24:00
+10,247,"Barraclough, Emma",Tristar 2,4,female,Amersham Tri,0:03:07,12,0:12:11,4,0:08:51,5,0:24:09
+11,242,"Metalli, Katie",Tristar 2,5,female,Jetstream Tr,0:03:06,11,0:12:23,6,0:09:33,10,0:25:02
+12,227,"Hollis, Harriet",Tristar 2,6,female,Jetstream Tr,0:03:42,19,0:12:26,7,0:09:01,6,0:25:09
+13,250,"Brown, Abigail",Tristar 2,7,female,,0:02:58,8,0:13:11,10,0:09:13,8,0:25:22
+14,268,"Jones, Ellie",Tristar 2,8,female,,0:02:55,7,0:13:31,13,0:09:04,7,0:25:30
+15,201,"MacDougall, Hannah",Tristar 2,9,female,D3 Triathlon,0:02:54,6,0:13:09,9,0:09:40,11,0:25:43
+16,261,"Pitts, Suzanne",Tristar 2,10,female,Tri-Force,0:02:44,4,0:13:37,14,0:09:41,12,0:26:02
+17,270,"Proctor, Sarah",Tristar 2,11,female,Jetstream Tr,0:02:36,3,0:15:02,17,0:08:37,4,0:26:15
+18,234,"Wilkins, Emily",Tristar 2,12,female,Tri-Sport-UK,0:03:59,20,0:12:10,3,0:10:07,14,0:26:16
+19,232,"Clemens, Alice",Tristar 2,13,female,Thames Turbo,0:03:14,14,0:13:13,11,0:09:53,13,0:26:20
+20,262,"Paisley, Alice",Tristar 2,14,female,East Essex T,0:03:02,10,0:14:09,15,0:09:14,9,0:26:25
+21,255,"Edwardson, Sophie",Tristar 2,15,female,Jetstream Tr,0:03:40,17,0:00:00,0,0:00:00,0,0:26:26
+22,257,"Rowe, Alex",Tristar 2,7,male,Thames Turbo,0:03:34,16,0:14:05,9,0:09:30,8,0:27:09
+23,233,"Pepperdine, Matthew",Tristar 2,8,male,Tri-Force,0:04:22,22,0:13:46,8,0:09:10,7,0:27:18
+24,264,"Croucher, Dannielle",Tristar 2,16,female,Thames Turbo,0:03:13,13,0:13:23,12,0:10:49,15,0:27:25
+25,237,"Dixon, Esme",Tristar 2,17,female,,0:03:27,15,0:11:43,2,0:12:50,23,0:28:00
+26,238,"Tandra, Anmohl",Tristar 2,9,male,,0:03:06,8,0:14:13,10,0:11:10,22,0:28:29
+27,240,"Knight, George",Tristar 2,10,male,East Essex T,0:03:11,9,0:14:43,13,0:10:36,20,0:28:30
+28,241,"Muir, Joe",Tristar 2,10,male,,0:03:37,17,0:15:14,14,0:09:39,12,0:28:30
+29,248,"Smith, Ellie Jade",Tristar 2,18,female,East Essex T,0:02:53,5,0:14:37,16,0:11:05,16,0:28:35
+30,271,"Patel, Devak",Tristar 2,12,male,,0:02:36,3,0:15:45,17,0:10:15,16,0:28:36
+31,245,"Tanda, Maneek",Tristar 2,13,male,,0:02:56,6,0:14:36,12,0:11:28,24,0:29:00
+32,239,"Antoine-Chagar,",Tristar 2,14,male,Swim For Tri,0:03:26,11,0:16:00,18,0:09:37,11,0:29:03
+33,236,"Hutchinson, Will",Tristar 2,15,male,,0:03:30,13,0:13:08,7,0:12:36,25,0:29:14
+34,246,"Speight, Dominic",Tristar 2,16,male,,0:03:48,19,0:15:32,15,0:10:00,15,0:29:20
+35,244,"Frame, Peter",Tristar 2,17,male,Thames Turbo,0:04:16,21,0:16:47,22,0:09:34,9,0:30:37
+36,211,"Bateson, Jack",Tristar 2,18,male,,0:03:30,13,0:16:45,20,0:10:26,17,0:30:41
+37,226,"Hawkins, Lewis",Tristar 2,19,male,Cambridge TC,0:03:27,12,0:14:24,11,0:12:52,28,0:30:43
+38,251,"Darnell, Thomas",Tristar 2,20,male,,0:03:32,15,0:16:22,19,0:11:14,23,0:31:08
+39,215,"Joseph, Alex",Tristar 2,21,male,,0:05:05,26,0:15:41,16,0:10:53,21,0:31:39
+40,206,"Read, Peter",Tristar 2,22,male,,0:03:48,19,0:17:58,27,0:10:26,17,0:32:12
+41,216,"Kuster, Lewis",Tristar 2,23,male,,0:04:51,25,0:17:29,25,0:09:56,14,0:32:16
+42,219,"Borralho, Charlie",Tristar 2,23,male,,0:05:18,27,0:17:23,24,0:09:35,10,0:32:16
+43,217,"Whittaker, Kim",Tristar 2,19,female,,0:04:09,23,0:16:10,18,0:12:12,20,0:32:31
+44,205,"Popper, Nicola",Tristar 2,20,female,,0:03:41,18,0:16:15,19,0:12:41,21,0:32:37
+45,202,"Ward, Stephen",Tristar 2,25,male,,0:05:28,29,0:17:47,26,0:09:45,13,0:33:00
+46,223,"Burns, Kirsten",Tristar 2,21,female,,0:03:59,20,0:17:42,24,0:12:06,19,0:33:47
+47,221,"Hardwidge, James",Tristar 2,26,male,,0:04:27,23,0:16:45,20,0:12:38,26,0:33:50
+48,222,"Tighe, Lizzie",Tristar 2,22,female,,0:04:07,22,0:17:29,21,0:13:02,24,0:34:38
+49,212,"Stone, Abigail",Tristar 2,23,female,,0:04:37,28,0:17:30,22,0:12:44,22,0:34:51
+50,249,"Phillips, Thaila",Tristar 2,24,female,,0:03:36,16,0:17:35,23,0:13:44,27,0:34:55
+51,218,"Lennard, Sophie",Tristar 2,25,female,,0:04:53,29,0:17:09,20,0:13:02,24,0:35:04
+52,243,"Manfredi, Michael",Tristar 2,27,male,,0:03:21,10,0:18:10,28,0:13:50,29,0:35:21
+53,213,"Karet, Amy",Tristar 2,26,female,,0:05:04,30,0:18:44,27,0:11:54,18,0:35:42
+54,254,"Adams, Georgina",Tristar 2,27,female,,0:04:23,25,0:20:09,29,0:11:12,17,0:35:44
+55,229,"Burdett, Hannah",Tristar 2,28,female,,0:04:23,25,0:18:06,25,0:13:27,26,0:35:56
+56,207,"Tucker, Mark",Tristar 2,28,male,,0:06:48,31,0:17:16,23,0:12:44,27,0:36:48
+57,214,"Weiss, Ryan",Tristar 2,29,male,,0:04:34,24,0:21:53,30,0:10:31,19,0:36:58
+58,208,"Stoodley, Ella",Tristar 2,29,female,,0:04:35,27,0:18:38,26,0:14:10,28,0:37:23
+59,210,"Hall, George",Tristar 2,30,male,,0:05:20,28,0:19:04,29,0:16:45,30,0:41:09
+60,252,"Lawrence, Poppy",Tristar 2,30,female,,0:04:15,24,0:19:57,28,0:19:20,30,0:43:32
+61,220,"Poole, Alastair",Tristar 2,31,male,,0:05:39,30,0:23:45,31,0:19:30,31,0:48:54
+62,209,"Rashid, Tahani",Tristar 2,31,female,,0:05:39,31,0:28:50,30,0:16:26,29,0:50:55
+1,336,"Blown, Matthew",Tristar 3,1,male,East Essex T,0:03:48,6,0:13:48,4,0:10:19,2,0:27:55
+2,347,"Smith, George",Tristar 3,2,male,East Essex T,0:03:45,3,0:00:00,0,0:00:00,0,0:28:13
+3,331,"Capp, Sam",Tristar 3,3,male,Jetstream Tr,0:04:55,18,0:13:46,3,0:10:18,1,0:28:59
+4,319,"Tapley, Adam",Tristar 3,4,male,Cambridge TC,0:04:27,12,0:14:09,5,0:10:25,3,0:29:01
+5,337,"Adams, William",Tristar 3,5,male,Cambridge TC,0:04:09,10,0:13:05,1,0:11:52,11,0:29:06
+6,352,"Payne, Harry",Tristar 3,5,male,East Essex T,0:03:24,1,0:14:39,8,0:11:03,5,0:29:06
+7,324,"Giggins, Tom",Tristar 3,7,male,East Essex T,0:04:48,15,0:13:13,2,0:11:12,6,0:29:13
+8,351,"Atkins, Christopher",Tristar 3,8,male,Swim For Tri,0:03:46,4,0:15:08,10,0:10:48,4,0:29:42
+9,348,"Spence, Jack",Tristar 3,9,male,Jetstream Tr,0:03:48,6,0:14:37,7,0:11:31,7,0:29:56
+10,350,"Proctor, Michael",Tristar 3,10,male,Jetstream Tr,0:04:29,14,0:14:27,6,0:11:41,9,0:30:37
+11,349,"Raffel, Daniela",Tristar 3,1,female,Optima Racin,0:04:08,3,0:15:17,1,0:11:45,2,0:31:10
+12,345,"Jaggs, Leo",Tristar 3,11,male,Camden Tri(J,0:03:46,4,0:15:50,12,0:11:37,8,0:31:13
+13,329,"Muggleton, William",Tristar 3,12,male,East Essex T,0:04:01,9,0:15:07,9,0:12:09,16,0:31:17
+14,321,"Clemens, Holly",Tristar 3,2,female,Thames Turbo,0:04:18,4,0:18:00,8,0:09:53,1,0:32:11
+15,353,"Tanda, Anoop",Tristar 3,13,male,,0:03:34,2,0:15:26,11,0:13:31,23,0:32:31
+16,328,"Hayhurst, Jamie",Tristar 3,14,male,Camden Tri(J,0:03:55,8,0:16:17,13,0:12:37,19,0:32:49
+17,340,"Bridge, Matilda",Tristar 3,3,female,Jetstream Tr,0:04:24,5,0:15:41,2,0:13:24,5,0:33:29
+18,323,"Robertson, Nick",Tristar 3,15,male,Thames Turbo,0:04:52,17,0:17:09,17,0:12:00,12,0:34:01
+19,327,"Browne, Alexander",Tristar 3,16,male,East Essex T,0:05:17,20,0:00:00,0,0:00:00,0,0:34:08
+20,355,"Smyth, Oscar",Tristar 3,17,male,,0:00:00,0,0:00:00,0,0:12:08,14,0:34:13
+21,301,"Chung, Christopher",Tristar 3,18,male,,0:06:00,27,0:16:36,14,0:12:27,17,0:35:03
+22,342,"Vila De Mucha, Maria",Tristar 3,4,female,Optima Racin,0:04:36,7,0:16:31,3,0:13:58,6,0:35:05
+23,306,"Entwistle, Katrina",Tristar 3,5,female,Cambridge TC,0:04:51,10,0:16:58,4,0:13:22,4,0:35:11
+24,310,"Weiss, Mitchell",Tristar 3,19,male,,0:06:24,28,0:16:47,16,0:12:01,13,0:35:12
+25,333,"Manfredi, Anthony",Tristar 3,20,male,,0:04:21,11,0:18:27,19,0:13:04,21,0:35:52
+26,354,"Butler, Alex",Tristar 3,21,male,,0:06:58,30,0:16:41,15,0:12:33,18,0:36:12
+27,332,"Muir, Tabitha",Tristar 3,6,female,,0:04:47,9,0:17:20,5,0:14:10,8,0:36:17
+28,330,"Dixon, Florence",Tristar 3,7,female,,0:04:33,6,0:17:57,7,0:14:15,9,0:36:45
+29,341,"Guildford, Carolyn",Tristar 3,7,female,Thames Turbo,0:04:06,2,0:19:18,9,0:13:21,3,0:36:45
+30,309,"Ghorbanian, Navid",Tristar 3,22,male,,0:04:49,16,0:18:29,20,0:13:37,24,0:36:55
+31,318,"Frame, Abigail",Tristar 3,9,female,Thames Turbo,0:05:05,11,0:17:22,6,0:14:29,10,0:36:56
+32,315,"Gledhill, George",Tristar 3,23,male,,0:05:17,20,0:18:08,18,0:14:07,26,0:37:32
+33,334,"Bisdee, Laurence",Tristar 3,24,male,,0:05:29,23,0:20:13,23,0:12:08,14,0:37:50
+34,346,"Bateson, Anna",Tristar 3,10,female,,0:04:02,1,0:19:50,10,0:13:58,6,0:37:50
+35,314,"Raja, Ravi",Tristar 3,25,male,,0:05:14,19,0:19:53,22,0:13:04,21,0:38:11
+36,320,"Elton, Ryan",Tristar 3,26,male,,0:05:41,25,0:18:37,21,0:14:05,25,0:38:23
+37,343,"Hutchinson, Andrew",Tristar 3,27,male,,0:04:27,12,0:21:14,25,0:12:51,20,0:38:32
+38,322,"Littley, Calum",Tristar 3,28,male,,0:05:36,24,0:21:37,27,0:11:48,10,0:39:01
+39,303,"Bennett, Maisie",Tristar 3,11,female,D3 Triathlon,0:00:00,0,0:00:00,0,0:17:01,11,0:43:30
+40,344,"Patel, Amar",Tristar 3,29,male,,0:05:42,26,0:21:16,26,0:17:28,29,0:44:26
+41,313,"Gloor, Robin",Tristar 3,30,male,,0:07:21,31,0:21:10,24,0:16:08,28,0:44:39
+42,304,"Bowsher, Alexander",Tristar 3,31,male,Optima Racin,0:05:27,22,0:23:39,29,0:16:06,27,0:45:12
+43,302,"Wardle, Rachael",Tristar 3,12,female,Hillingdon T,0:04:45,8,0:20:47,11,0:19:53,12,0:45:25
+44,317,"Smithson, Jamie",Tristar 3,32,male,Jetstream Tr,0:06:47,29,0:23:05,28,0:18:56,30,0:48:48
+1,430,"Smith, Hugh",Youth,1,male,East Essex T,0:04:53,1,0:15:57,1,0:12:42,2,0:33:32
+2,416,"Percival, Adam",Youth,2,male,D3 Triathlon,0:06:13,7,0:16:07,3,0:12:08,1,0:34:28
+3,428,"Hayes, Benjamin",Youth,3,male,,0:04:55,2,0:16:51,5,0:12:45,3,0:34:31
+4,419,"Bridger, Max",Youth,4,male,Thames Turbo,0:05:44,5,0:00:00,0,0:00:00,0,0:35:27
+5,431,"Hewitt, Becky",Youth,1,female,Swim For Tri,0:05:37,2,0:17:30,1,0:13:20,1,0:36:27
+6,434,"Bennett, Joe",Youth,5,male,D3 Triathlon,0:06:07,6,0:16:49,4,0:13:37,6,0:36:33
+7,422,"Vila De Mucha, Pedro",Youth,6,male,Optima Racin,0:05:29,4,0:17:57,6,0:13:26,5,0:36:52
+8,425,"Luckham, David",Youth,7,male,,0:05:07,3,0:18:32,8,0:13:39,7,0:37:18
+9,424,"Myers, Matthew",Youth,8,male,Optima Racin,0:06:38,9,0:16:04,2,0:13:25,4,0:37:37
+10,415,"Bryant, Olivia",Youth,2,female,Optima Racin,0:06:37,6,0:18:15,2,0:13:52,2,0:38:44
+11,421,"Hopkins, Claire",Youth,3,female,Jetstream Tr,0:05:46,3,0:18:50,3,0:15:59,4,0:40:35
+12,407,"Mrozek, Paul",Youth,9,male,,0:08:55,11,0:18:41,9,0:14:50,8,0:42:26
+13,404,"Hunt, Callum",Youth,10,male,,0:09:35,13,0:18:58,10,0:14:53,9,0:43:26
+14,414,"French, Helena",Youth,4,female,D3 Triathlon,0:06:49,7,0:21:10,5,0:15:27,3,0:43:26
+15,410,"Langmuir, Sara",Youth,5,female,Optima Racin,0:07:35,8,0:20:09,4,0:16:25,5,0:44:09
+16,413,"Summers, Sioni",Youth,11,male,Tri-Sport-UK,0:06:28,8,0:20:49,12,0:16:54,11,0:44:11
+17,423,"Owide, Lauren",Youth,6,female,Jetstream Tr,0:05:31,1,0:21:50,7,0:18:23,7,0:45:44
+18,403,"Peel, Kieran",Youth,12,male,,0:09:07,12,0:20:42,11,0:16:02,10,0:45:51
+19,426,"Croucher, Stephanie",Youth,7,female,Thames Turbo,0:06:35,5,0:21:46,6,0:17:53,6,0:46:14
+20,406,"Ratcliffe, Jack",Youth,13,male,,0:08:07,10,0:18:30,7,0:19:50,12,0:46:27
+21,417,"Kitchen, Emma",Youth,8,female,Jetstream Tr,0:05:57,4,0:23:23,8,0:19:56,8,0:49:16
+22,402,"Ratcliffe, Henry",Youth,14,male,,0:10:28,14,0:22:49,13,0:27:53,13,1:01:10
