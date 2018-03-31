@@ -41,7 +41,10 @@ class ReactController extends Controller
 			$comps=$this->get_comps();
 			return response()->json(['csrf'=>csrf_token(),'competitors'=>$comps,'scheduled'=>$this->scheduled($comps),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
 			*/
-			return response()->json(['csrf'=>csrf_token()]);
+			$latest=DB::table('roles')->max('id');
+			return response()->json(['csrf'=>csrf_token(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
+				
+			//return response()->json(['csrf'=>csrf_token()]);
 		}
 	}
 	
