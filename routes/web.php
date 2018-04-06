@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/swim', function () {
+	return view('index');
+});
 Route::get('/upload', function () {
 		return view('upload');
 });
