@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Volunteer;
 use App\Competitor;
 use App\Role;
+use App\Swim;
 use Log;
 use DB;
 use Hash;
@@ -22,6 +23,7 @@ class ReactController extends Controller
 	{
 		if($request->ajax()){
 			if (isset($request->volunteers)) return ($this->volunteers($request));
+			else if (isset($request->swim)) return ($this->swim($request));
 			else if (isset($request->results)) return ($this->results($request));
 			else if (isset($request->competitors)) return ($this->competitors($request));
 			else if (isset($request->save)) $this->save($request); // fall through to return updates
@@ -47,6 +49,38 @@ class ReactController extends Controller
 			//return response()->json(['csrf'=>csrf_token()]);
 		}
 	}
+	
+	private function swim($request)
+	{
+		
+		if ($swim=$request->swim)
+		{
+			Log::debug('swim',['swim'=>$swim,'key'=>$swim['key'],'last_id'=>$swim['last_id']]);
+			$s = new Swim;
+			$s->json=json_encode($request->swim);
+			if (!$swim['key']) {
+				$s->token=0; // settings
+				$log=[];
+			}
+			else {
+				$s->token=$swim['key'];
+				if ($swim['last_id']) $log=Swim::where('token',$swim['key'])->where('id','>',$swim['last_id'])->get();
+				else {
+					Log::debug('swim link');
+					$log=Swim::find($swim['key']);
+				}
+			}
+			if (isset($swim['get'])) {
+				$id=DB::table('swims')->max('id');
+			}
+			else {
+				$s->save();
+				$id=$s->id;
+			}
+			return response()->json(['id'=>$id,'log'=>$log]);
+		}
+	}
+	
 	
 	private function volAll($request)
 	{
