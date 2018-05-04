@@ -44,7 +44,7 @@ class ReactController extends Controller
 			return response()->json(['csrf'=>csrf_token(),'competitors'=>$comps,'scheduled'=>$this->scheduled($comps),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
 			*/
 			$latest=DB::table('roles')->max('id');
-			return response()->json(['csrf'=>csrf_token(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null]);
+			return response()->json(['csrf'=>csrf_token(),'volunteers'=>$this->get_vols(),'roles'=>$latest?Role::find($latest):null,'competitors'=>$this->get_comps()]);
 				
 			//return response()->json(['csrf'=>csrf_token()]);
 		}
@@ -152,7 +152,12 @@ class ReactController extends Controller
 	
 	private function get_comps($priv=true)
 	{
-		$ret=[];
+
+		$cs=Storage::get('competitors/competitors2018.csv');
+		if (!mb_detect_encoding($cs, 'UTF-8', true)) $cs=utf8_encode($cs);
+		Log::debug("get_comps"); //,['cs'=>$cs]);
+		return $cs;
+		/*
 		$cs=Competitor::all();
 		foreach($cs as $c) {
 			$cr=[];
@@ -176,6 +181,7 @@ class ReactController extends Controller
 			$ret[]=$cr;
 		}
 		return $ret;
+		*/
 	}
 	
 	
@@ -217,6 +223,9 @@ class ReactController extends Controller
 	
 	private function saveC($request)
 	{
+		$cs=Storage::put('competitors/competitors.json',json_encode($request->saveC));
+		return response()->json($request->saveC);
+		/*
 		Log::debug('ajax saveC',['saveC'=>$request->saveC]);
 		if ($c=Competitor::where('id',$request->saveC['id'])->first()) {
 			$old=json_decode($c->json,true);
@@ -228,6 +237,7 @@ class ReactController extends Controller
 			$c->save();
 			return response()->json(['competitors'=>$this->get_comps()]);
 		}
+		*/
 	}
 	
 	
