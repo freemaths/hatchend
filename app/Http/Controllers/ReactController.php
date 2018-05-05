@@ -52,12 +52,12 @@ class ReactController extends Controller
 	
 	private function swim($request)
 	{
-		
+		$ts=round(microtime(true)*1000);
 		if ($swim=$request->swim)
 		{
 			Log::debug('swim',['swim'=>$swim,'key'=>$swim['key'],'last_id'=>$swim['last_id']]);
 			$s = new Swim;
-			$swim['ts']=time();
+			$swim['ts']=$ts;
 			$s->json=json_encode($swim);
 			if (!$swim['key']) {
 				$s->token=0; // settings
@@ -78,7 +78,7 @@ class ReactController extends Controller
 				$s->save();
 				$id=$s->id;
 			}
-			return response()->json(['id'=>$id,'log'=>$log]);
+			return response()->json(['id'=>$id,'log'=>$log, 'ts'=>$ts, 'ts1'=>$request->ts]);
 		}
 	}
 	
