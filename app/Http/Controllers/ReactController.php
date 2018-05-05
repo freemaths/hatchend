@@ -57,7 +57,9 @@ class ReactController extends Controller
 		{
 			Log::debug('swim',['swim'=>$swim,'key'=>$swim['key'],'last_id'=>$swim['last_id']]);
 			$s = new Swim;
-			$swim['ts']=$ts;
+			$swim['tss']=$ts;
+			$swim['ts']=$request->ts;
+			$swim['d2']=$request->d2;
 			$s->json=json_encode($swim);
 			if (!$swim['key']) {
 				$s->token=0; // settings
@@ -78,7 +80,7 @@ class ReactController extends Controller
 				$s->save();
 				$id=$s->id;
 			}
-			return response()->json(['id'=>$id,'log'=>$log, 'ts'=>$ts, 'ts1'=>$request->ts]);
+			return response()->json(['id'=>$id,'log'=>$log, 'tss'=>$ts, 'ts'=>$request->ts, 'd2'=>$request->d2]);
 		}
 	}
 	
