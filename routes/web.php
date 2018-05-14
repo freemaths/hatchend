@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('index',['v'=>'2.2']);
+    return view('index',['v'=>'2.3']);
 });
 Route::get('/swim', function () {
-	return view('index',['v'=>'2.2']);
+	return view('index',['v'=>'2.3']);
 });
 Route::get('/upload', function () {
 		return view('upload');
